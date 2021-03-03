@@ -7,6 +7,7 @@
     <title>Test Design Web</title>
 </head>
 <body>
+    <div class="heading"><div id="head1">Trang Chủ</div><div id="head2">Đăng Nhập</div></div>
     <div class="box">
         <div class="box2">
             <p class="p1">Vui lòng điền vào thông tin đăng nhập</p>
@@ -20,15 +21,49 @@
 <style>
     .box {
         width: 100%;
-        height: 2000px;
-        background: linear-gradient(120deg,rgb(0, 0, 95),rgb(158, 148, 148));
+        height: 2000px; 
+        background: linear-gradient(120deg,rgb(63, 138, 209),rgb(10, 204, 52));
     }
     .box2{
         position: fixed;
         margin-left: 500px;
         margin-top: 200px;
-        background: linear-gradient(60deg, rgb(119, 119, 61), rgb(150, 69, 83));
+        animation-name: boxlogin;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;    
         padding: 20px;
+    }
+    @keyframes boxlogin{
+        0%{
+            background-color: red;
+        }
+        10%{
+            background-color: blue;
+        }
+        20%{
+            background-color: rgb(14, 221, 14);
+        }
+        30%{
+            background-color: rgb(114, 114, 179);
+        }
+        40%{
+            background-color: green;
+        }
+        50%{
+            background-color: cyan;
+        }
+        60%{
+            background-color: darkviolet;
+        }
+        70%{
+            background-color: greenyellow;
+        }
+        80%{
+            background-color: mediumseagreen;
+        }
+        90%{
+            background-color: yellow;
+        }
     }
     .box3{
         margin-left: 50px;
@@ -47,6 +82,27 @@
     }
     .input1{
         margin-left: 4px;
+    }
+    .heading{
+        width: 100%;
+        height: 62px;
+        color: blanchedalmond;
+        background-color: rgb(22, 2, 107);
+        position: fixed;
+        top: 0;
+    }
+    #head1{
+        font-size: 20px;
+        float: left;
+        position: relative;
+        top:  20px;
+        left: 20px;
+    }
+    #head2{
+        font-size: 20px;
+        position: relative;
+        left: 1100px;
+        top:20px;
     }
 </style>
 </html>
